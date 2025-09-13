@@ -108,6 +108,7 @@ body {
   background-color: #5e480f;
   padding: 10px 12px;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .bottom-nav .nav-brand h2 {
