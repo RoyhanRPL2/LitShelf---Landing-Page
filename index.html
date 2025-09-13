@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitShelf - Your Haven for Stories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+    <meta name="description"
+        content="LitShelf is your go-to online bookstore, offering a curated selection of books across genres. Discover your next favorite read with us!">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="top-nav">
+        <div class="header-content desktop-header">
+            <div class="logo-container">
+                <div class="logo">LitShelf</div>
+            </div>
+            <nav class="navbar">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="#book-list" class="nav-item">Book List</a>
+                <a href="#cta" class="nav-item">Browse</a>
+            </nav>
+        </div>
+        <div class="mobile-header">
+            <div class="logo">
+                <div>LitShelf</div>
+            </div>
+            <div class="mobile-header-menu-icon" onclick="toggleMenu()">
+                <img src="/assets/burger.svg" alt="Menu Icon">
+            </div>
+        </div>
+        <div id="menu-active">
+            <div class="close-icon-container">
+                <div class="close-icon">
+                    <img src="/assets/close.svg" alt="Close Icon" onclick="toggleMenu()">
+                </div>
+            </div>
+            <nav>
+                <a href="index.html" onclick="menuLinkClicked()">Home</a>
+                <a href="#book-list" onclick="menuLinkClicked()">Book List</a>
+                <a href="#cta" onclick="menuLinkClicked()">Browse</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-brand">
+            <h2>LitShelf</h2>
+        </a>
+        <div class="nav-icons">
+            <a href="#home" class="nav-link" title="Home">Home</a>
+            <a href="#book-list" class="nav-link" title="Book List">Product</a>
+            <a href="#cta" class="nav-link" title="About">Browse</a>
+        </div>
+    </nav>
+
+    <!-- Hero Container -->
+    <section class="hero-container section" id="home">
+        <div class="hero-quote">
+            <div class="quote-content">
+                <p class="quote-text">"The reading of all good books is like a conversation with the finest minds of
+                    past centuries." — René Descartes</p>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/assets/images/hero-img.jpg" alt="hero image">
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section section" id="book-list">
+        <div class="section-header">
+            <h2 class="section-title">Featured Books of September 2025</h2>
+        </div>
+        <div class="product-item-list">
+            <!-- Product Item 1 -->
+            <div class="product-item">
+                <img src="/assets/images/product-1.jpg"
+                    alt="book 1 image">
+                <div class="product-item-detail">
+                    <div class="product-title">Mystery at dawn</div>
+                    <div class="product-author">Jane Doe</div>
+                    <div class="product-price">$12.99</div>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <!-- Product Item 2 -->
+            <div class="product-item">
+                <img src="/assets/images/product-2.jpg"
+                    alt="book 2 image">
+                <div class="product-item-detail">
+                    <div class="product-title">Echoes of the Past</div>
+                    <div class="product-author">John Smith</div>
+                    <div class="product-price">$15.99</div>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <!-- Product Item 3 -->
+            <div class="product-item">
+                <img src="/assets/images/product-3.jpg"
+                    alt="book 3 image">
+                <div class="product-item-detail">
+                    <div class="product-title">Silent Horizons</div>
+                    <div class="product-author">Emily Brown</div>
+                    <div class="product-price">$9.99</div>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-link">
+            <div class="top-section">
+                <p>check out all books</p>
+            </div>
+            <div class="bottom-section">
+                <svg class="arrow-icon" fill="none" preserveAspectRatio="none" viewBox="0 0 15 13">
+                    <path d="M0 6H12.25L7 0.75L7.66 0L14.16 6.5L7.66 13L7 12.25L12.25 7H0V6Z" fill="black" />
+                </svg>
+                <span class="view-all-text">view all books</span>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta section" id="cta">
+        <div class="cta-content">
+            <div class="cta-card">
+                <div class="cta-text-container">
+                    <h2 class="cta-title">Explore Endless Stories</h2>
+                    <button class="cta-button">Browse Books Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main" id="footer">
+            <div class="footer-brand">LitShelf</div>
+            <div class="footer-nav">
+                <nav class="navbar">
+                    <a href="index.html" class="nav-item">Home</a>
+                    <a href="#book-list" class="nav-item">Book List</a>
+                    <a href="#cta" class="nav-item">Browse</a>
+                </nav>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" class="social-icon" title="Instagram">
+                    <img src="/assets/instagram.svg" alt="Instagram Icon">
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon" title="Facebook">
+                    <img src="/assets/facebook.svg" alt="Facebook Icon">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon" title="Twitter">
+                    <img src="/assets/twitter.svg" alt="Twitter Icon">
+                </a>
+            </div>
+            <div class="footer-copyright">Your haven for stories – explore, read, connect. © 2025 LitShelf.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
