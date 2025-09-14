@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 const sectionId = entry.target.id;
                 if (footerInView && sectionId !== 'footer') {
-                    // If footer is in view but another section is intersecting, highlight that section
                     navLinks.forEach(link => {
                         link.style.borderColor = '#c2b38d';
                         if (link.getAttribute('href') === `#${sectionId}`) {
@@ -71,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function toggleMenu() {
-    // Toggle the menu visibility without double click bug
     const menu = document.getElementById("menu-active");
     const header = document.querySelector("header");
     const menuIcon = document.querySelector(".menu-icon img");
@@ -80,7 +78,7 @@ function toggleMenu() {
         menu.style.display = "none";
         header.style.height = "auto";
     } else {
-        menu.style.display = "flex"; // Full viewport height
+        menu.style.display = "flex";
         header.style.height = "100vh";
     }
 }
@@ -92,7 +90,7 @@ function menuLinkClicked() {
     header.style.height = "fit-content";
 }
 
-// reset url when reloading the page after clicking a menu link
+
 window.onload = function() {
     if (window.location.href.indexOf('#') > -1) {
         window.location.href = window.location.href.split('#')[0];
